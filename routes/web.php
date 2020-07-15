@@ -20,4 +20,5 @@ Route::prefix('blogs')->group(function (){
     Route::get('index','BlogController@index')->name('blogs.index');
     Route::get('create','BlogController@create')->name('blogs.create');
     Route::post('create','BlogController@store')->name('blogs.store');
+    Route::get('delete/{id}','BlogController@delete')->name('blogs.delete');
 });

@@ -28,7 +28,7 @@
                     <td>{{ $blog->author }}</td>
                     <td><img style="width: 100px" src={{asset("storage/".$blog->image)}}></td>
                     <td><a href="">sửa</a></td>
-                    <td><a href="" class="text-danger"
+                    <td><a href="{{route('blogs.delete',$blog->id)}}" class="text-danger"
                            onclick="return confirm('Bạn chắc chắn muốn xóa?')">xóa</a></td>
                 </tr>
             @endforeach
